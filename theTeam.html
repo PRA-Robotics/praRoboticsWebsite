@@ -1,11 +1,106 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>JS Bin</title>
+<style>
+body {
+  margin: 0;
+  font-size: 28px;
+}
+.header {
+  background-color: #dfe2db;
+  padding: 30px;
+  text-align: center;
+}
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+#navbar a {
+  float: left;
+  display: block;
+  color: #dfe2db;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+#navbar a:hover {
+  background-color: #a6a8a4;
+  color: black;
+}
+#navbar a.active {
+  background-color: #FFF056;
+  color: black;
+}
+.content {
+  padding: 16px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+.sticky + .content {
+  padding-top: 60px;
+}
+  #spacey{
+    position: absolute;
+    width: 30%;
+    z-index:1;
+    top: 1535px;
+    }
+  #home{
+    
+  }
+  
+</style>
 </head>
-<body>
-  <p> word </p>
+<body onscroll="myFunction()">
+  <img id="spacey" src="37446100350_3fee0ff752_o.jpg">
+
+<div class="header">
+  <h1>PRA Robotics</h1>
+  <p>Hope is a strategy</p>
+</div>
+
+<div id="navbar">
+  <a href="https://pra-robotics.github.io/praRoboticsWebsite/praRobotics">Home</a>
+  <a class="active" href="https://pra-robotics.github.io/praRoboticsWebsite/theTeam">Teams</a>
+  <a href="javascript:void(0)">Community Outreach</a>
+  <a href="javascript:void(0)">Awards</a>
+</div>
+
+  
+<div class="content">
+  <h3>Who are the teams?</h3>
+  <p> The First Tech Challenge (FTC) and the First Lego League (FLL) teams.</p>
+  <small>(There is also the Autonomous Vehicle Challenge team, but they're also FTC members) </small>
+  <h2>First Tech Challenge</h2>
+  <p>This team competes in the First Tech Challenge hosted by FIRST. </p>
+  <p>This year the team's robot has been affectionally named 'Om'. Short for omnidirectional, on account of it's omnidirectional capabilities for maneuvering the course.</p>
+  <h2>First Lego League</h2>
+  <p> They're doing something. Whether it's preparing for the competition or messing around with Legos, nobody knows. </p>
+  <h2>Autonomous Vehicle Competition </h2>
+  <p>The Autonomous Vehicle Competition is an annual competition hosted by Sparkfun that features, you guessed it, autonmous vehicles. This year, the objective was to travel around a track in the shape of a figure eight without any driver control. So on remote controlled vehicles.</p>
+  <p>The team used ultrasonic sensors to detect objects in front of the robot dubbed Spacey. Inside, with a controlled environment, no wind, room temperature, and a flat ground, Spacey worked beautifully. It could conquer any obstacle in front of it. However, that quickly changed when 'outside' was added to the equation.</p>
+  <p>The night before, half the team remained at school until 9pm working out bugs. Spoiler alert, they never did get fixed. The competition day was full of fog, freezing fingers, and the addition of two antlers. In conclusion, the team did not get far in the competition. </p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+</div>
+
+<script>
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
 </body>
 </html>
