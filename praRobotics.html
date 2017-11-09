@@ -38,6 +38,20 @@ body {
   background-color: #FFF056;
   color: black;
 }
+  
+.parallax { 
+    /* The image used */
+    background-image: #overview;
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
 
 .content {
   padding: 16px;
@@ -66,6 +80,7 @@ body {
 </head>
 <body onscroll="myFunction()">
   <img id="spacey" src="37446100350_3fee0ff752_o.jpg">
+  <img id="overview" src="photos/20170909_095351.jpg">
 
 <div class="header">
   <h2>PRA Robotics</h2>
@@ -79,7 +94,7 @@ body {
   <a href="javascript:void(0)">Awards</a>
 </div>
 
-  
+<div class="parallax"></div>
 <div class="content">
   <h3>Who are we?</h3>
   <p> We're a group of students in Colorado. This website hosts all of our robotics teams for Prospect Ridge Academy. A k-12 school.
