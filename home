@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-body {
-  margin: 0;
-  font-size: 28px;
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <style>
+    body, html {
+    height: 100%;
 }
 .header {
-  background-color: #dfe2db;
+  background-color: #dbe2e1;
   padding: 30px;
   text-align: center;
 }
@@ -32,6 +34,19 @@ body {
   background-color: #FFF056;
   color: black;
 }
+.parallax { 
+    /* The image used */
+    background-image: url("https://github.com/PRA-Robotics/praRoboticsWebsite/blob/master/photos/CO-Prospect-Ridge-Academy-1.jpg?raw=true");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
 .content {
   padding: 16px;
 }
@@ -52,11 +67,11 @@ body {
   #home{
     
   }
-  
+
 </style>
 </head>
 <body onscroll="myFunction()">
-  <img id="spacey" src="37446100350_3fee0ff752_o.jpg">
+  <!--<img id="spacey" src="37446100350_3fee0ff752_o.jpg">-->
 
 <div class="header">
   <h2>PRA Robotics</h2>
@@ -70,7 +85,7 @@ body {
   <a href="javascript:void(0)">Awards</a>
 </div>
 
-  
+<div class="parallax"></div>  
 <div class="content">
   <h3>Who are we?</h3>
   <p> We're a group of students in Colorado. This website hosts all of our robotics teams for Prospect Ridge Academy. A k-12 school.
@@ -102,3 +117,4 @@ function myFunction() {
 
 </body>
 </html>
+
