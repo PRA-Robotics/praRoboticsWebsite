@@ -1,235 +1,236 @@
- <!DOCTYPE html>
- <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-   <title>PRA Robotics - Teams</title>
-    <style>
-     body{
-      font: 400 15px/1.8 "lato", sans-serif;
+<!DOCTYPE html>
+  <html>
+   <head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width">
+    <title>PRA Robotics - Teams</title>
+     <style>
+      body{
+       font: 400 15px/1.8 "lato", sans-serif;
+     }
+       body, html {
+       height: 100%;
+  }
+  .header {
+    background-color: #dbe2e1;
+    padding: 30px;
+    text-align: center;
+  }
+  #navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  #navbar a {
+    float: left;
+    display: block;
+    color: #dfe2db;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  #navbar a:hover {
+    background-color: #a6a8a4;
+    color: black;
+  }
+  #navbar a.active {
+    background-color: #FFF056;
+    color: black;
+  }
+  .parallax1 { 
+      /* The image used */
+      background-image: url("photos/ezgif.com-video-to-gif.gif");
+  
+      /* Full height */
+      height: 100%; 
+  
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      }
+      .intro{
+       padding: 50px;
+      }
+  .parallaxFTC { 
+      /* The image used */
+      background-image: url("photos/20170930_112315.jpg");
+  
+      /* Full height */
+      height: 100%; 
+  
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      }
+  .FTCcaption {
+     background-color:transparent;
+     text-align:center;
+     color: #f7f7f7;
+   text-shadow:
+     -2px -2px 0 #000,
+     2px -2px 0 #000,
+     -2px 2px 0 #000,
+     2px 2px 0 #000; 
+     color: #f7f7f7;
+     font-size:50px;
+     top: 50%;
+     padding: 25%;
+     }
+      .FTC{
+       padding: 50px;
+      }
+  .parallaxFLL { 
+      /* The image used */
+      background-image: url("photos/20171110_160044.jpg");
+  
+      /* Full height */
+      height: 100%; 
+  
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      }
+      .FLLcaption {
+     background-color:transparent;
+     text-align:center;
+     color: #f7f7f7;
+       text-shadow:
+     -2px -2px 0 #000,
+     2px -2px 0 #000,
+     -2px 2px 0 #000,
+     2px 2px 0 #000; 
+     color: #f7f7f7;
+     font-size:50px;
+     top: 50%;
+     padding: 25%;
+     }
+      .FLL{
+       padding: 50px;
+      }
+  .parallaxAVC { 
+      /* The image used */
+      background-image: url("photos/37446100350_35639cda16_k (1).jpg");
+  
+      /* Full height */
+      height: 100%; 
+  
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      }
+      .AVCcaption {
+     background-color:transparent;
+     text-align:center;
+     color: #f7f7f7;
+       text-shadow:
+     -2px -2px 0 #000,
+     2px -2px 0 #000,
+     -2px 2px 0 #000,
+     2px 2px 0 #000; 
+     color: #f7f7f7;
+     font-size:50px;
+     top: 50%;
+     padding: 25%;
+     }
+    .AVC{
+     padding: 50px;
+      }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+  .sticky + .content {
+    padding-top: 60px;
+  }
+    /*#spacey{
+      position: absolute;
+      width: 30%;
+      z-index:1;
+      top: 1535px;
+      }*/
+    #home{
+      
     }
-      body, html {
-      height: 100%;
- }
- .header {
-   background-color: #dbe2e1;
-   padding: 30px;
-   text-align: center;
- }
- #navbar {
-   overflow: hidden;
-   background-color: #333;
- }
- #navbar a {
-   float: left;
-   display: block;
-   color: #dfe2db;
-   text-align: center;
-   padding: 14px 16px;
-   text-decoration: none;
-   font-size: 17px;
- }
- #navbar a:hover {
-   background-color: #a6a8a4;
-   color: black;
- }
- #navbar a.active {
-   background-color: #FFF056;
-   color: black;
- }
- .parallax1 { 
-     /* The image used */
-     background-image: url("photos/ezgif.com-video-to-gif.gif");
- 
-     /* Full height */
-     height: 100%; 
- 
-     /* Create the parallax scrolling effect */
-     background-attachment: fixed;
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover;
-     }
-     .intro{
-      padding: 50px;
-     }
- .parallaxFTC { 
-     /* The image used */
-     background-image: url("photos/20170930_112315.jpg");
- 
-     /* Full height */
-     height: 100%; 
- 
-     /* Create the parallax scrolling effect */
-     background-attachment: fixed;
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover;
-     }
- .FTCcaption {
-    background-color:transparent;
-    text-align:center;
-    color: #f7f7f7;
-  text-shadow:
-    -2px -2px 0 #000,
-    2px -2px 0 #000,
-    -2px 2px 0 #000,
-    2px 2px 0 #000; 
-    color: #f7f7f7;
-    font-size:50px;
-    top: 50%;
-    padding: 25%;
+  
+  </style>
+  </head>
+  <body onscroll="myFunction()">
+   <!-- <img id="spacey" src="37446100350_3fee0ff752_o.jpg"> -->
+  
+  <div class="header">
+    <h1>PRA Robotics</h1>
+    <p>Hope is a strategy</p>
+  </div>
+  
+  <div id="navbar">
+    <a href="https://pra-robotics.github.io/praRoboticsWebsite/praRobotics">Home</a>
+    <a href="https://pra-robotics.github.io/praRoboticsWebsite/theTeam">Teams</a>
+    <a href="https://pra-robotics.github.io/praRoboticsWebsite/outreach">Community Outreach</a>
+    <a class="active" href="https://pra-robotics.github.io/praRoboticsWebsite/awards">Awards</a>
+  </div>
+  
+  <div class="parallax1"></div>  
+  <div class="intro">
+    <h3>The awards</h3>
+    <p>FTC has a few awards that can be won. (insert the description of the awards here)</p>
+   <p>FLL has the project award. Which means your project was really good. </p>
+   </div>
+  <div class="parallaxFTC">
+     <div class="FTCcaption">
+     <h1>2016</h1>
+    </div>
+    <div>
+     <p> RAWRRRRRR. The FTC team won the design award in 2016.</p>
+ -   <img src="photos/Image uploaded from iOS.jpg" alt="design award 2016" style="width:500px;height:600px;>
+ +   <img src="photos/Image uploaded from iOS.jpg" alt="design award 2016" style="height:600px;>
+    </div>
+    </div>
+   <div class="FTC"><h2>First Tech Challenge</h2>
+    <p>This team competes in the First Tech Challenge hosted by FIRST. </p>
+    <p>This year the team's robot has been affectionally named 'Om'. Short for omnidirectional, on account of it's omnidirectional capabilities for maneuvering the course.</p></div>
+  <div class="parallaxFLL">
+   <div class="FLLcaption">
+     <h1>FLL</h1>
+   </div>
+   </div>
+  <div class="FLL"><h2>First Lego League</h2>
+    <p> They're doing something. Whether it's preparing for the competition or messing around with Legos, nobody knows. </p></div>
+  <div class="parallaxAVC">
+   <div class="AVCcaption">
+     <h1>AVC</h1>
+   </div>
+   </div>
+  <div class="AVC"><h2>Autonomous Vehicle Competition </h2>
+    <p>The Autonomous Vehicle Competition is an annual competition hosted by Sparkfun that features, you guessed it, autonmous vehicles. This year, the objective was to travel around a track in the shape of a figure eight without any driver control. So on remote controlled vehicles.</p>
+    <p>The team used ultrasonic sensors to detect objects in front of the robot dubbed Spacey. Inside, with a controlled environment, no wind, room temperature, and a flat ground, Spacey worked beautifully. It could conquer any obstacle in front of it. However, that quickly changed when 'outside' was added to the equation.</p>
+    <p>The night before, half the team remained at school until 9pm working out bugs. Spoiler alert, they never did get fixed. The competition day was full of fog, freezing fingers, and the addition of two antlers. In conclusion, the team did not get far in the competition. </p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  </div>
+  
+  <script>
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
     }
-     .FTC{
-      padding: 50px;
-     }
- .parallaxFLL { 
-     /* The image used */
-     background-image: url("photos/20171110_160044.jpg");
- 
-     /* Full height */
-     height: 100%; 
- 
-     /* Create the parallax scrolling effect */
-     background-attachment: fixed;
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover;
-     }
-     .FLLcaption {
-    background-color:transparent;
-    text-align:center;
-    color: #f7f7f7;
-      text-shadow:
-    -2px -2px 0 #000,
-    2px -2px 0 #000,
-    -2px 2px 0 #000,
-    2px 2px 0 #000; 
-    color: #f7f7f7;
-    font-size:50px;
-    top: 50%;
-    padding: 25%;
-    }
-     .FLL{
-      padding: 50px;
-     }
- .parallaxAVC { 
-     /* The image used */
-     background-image: url("photos/37446100350_35639cda16_k (1).jpg");
- 
-     /* Full height */
-     height: 100%; 
- 
-     /* Create the parallax scrolling effect */
-     background-attachment: fixed;
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover;
-     }
-     .AVCcaption {
-    background-color:transparent;
-    text-align:center;
-    color: #f7f7f7;
-      text-shadow:
-    -2px -2px 0 #000,
-    2px -2px 0 #000,
-    -2px 2px 0 #000,
-    2px 2px 0 #000; 
-    color: #f7f7f7;
-    font-size:50px;
-    top: 50%;
-    padding: 25%;
-    }
-   .AVC{
-    padding: 50px;
-     }
- 
- .sticky {
-   position: fixed;
-   top: 0;
-   width: 100%
- }
- .sticky + .content {
-   padding-top: 60px;
- }
-   /*#spacey{
-     position: absolute;
-     width: 30%;
-     z-index:1;
-     top: 1535px;
-     }*/
-   #home{
-     
-   }
- 
- </style>
- </head>
- <body onscroll="myFunction()">
-  <!-- <img id="spacey" src="37446100350_3fee0ff752_o.jpg"> -->
- 
- <div class="header">
-   <h1>PRA Robotics</h1>
-   <p>Hope is a strategy</p>
- </div>
- 
- <div id="navbar">
-   <a href="https://pra-robotics.github.io/praRoboticsWebsite/praRobotics">Home</a>
-   <a href="https://pra-robotics.github.io/praRoboticsWebsite/theTeam">Teams</a>
-   <a href="https://pra-robotics.github.io/praRoboticsWebsite/outreach">Community Outreach</a>
-   <a class="active" href="https://pra-robotics.github.io/praRoboticsWebsite/awards">Awards</a>
- </div>
- 
- <div class="parallax1"></div>  
- <div class="intro">
-   <h3>The awards</h3>
-   <p>FTC has a few awards that can be won. (insert the description of the awards here)</p>
-  <p>FLL has the project award. Which means your project was really good. </p>
-  </div>
- <div class="parallaxFTC">
-    <div class="FTCcaption">
-    <h1>2016</h1>
-  </div>
-  <div>
-   <p> RAWRRRRRR. The FTC team won the design award in 2016.</p>
-   <img style="text-align: center;" src="photos/Image uploaded from iOS.jpg" alt="design award 2016" style="height:600px;>
-  </div>
-  </div>
- <div class="FTC"><h2>First Tech Challenge</h2>
-   <p>This team competes in the First Tech Challenge hosted by FIRST. </p>
-   <p>This year the team's robot has been affectionally named 'Om'. Short for omnidirectional, on account of it's omnidirectional capabilities for maneuvering the course.</p></div>
- <div class="parallaxFLL">
-  <div class="FLLcaption">
-    <h1>FLL</h1>
-  </div>
-  </div>
- <div class="FLL"><h2>First Lego League</h2>
-   <p> They're doing something. Whether it's preparing for the competition or messing around with Legos, nobody knows. </p></div>
- <div class="parallaxAVC">
-  <div class="AVCcaption">
-    <h1>AVC</h1>
-  </div>
-  </div>
- <div class="AVC"><h2>Autonomous Vehicle Competition </h2>
-   <p>The Autonomous Vehicle Competition is an annual competition hosted by Sparkfun that features, you guessed it, autonmous vehicles. This year, the objective was to travel around a track in the shape of a figure eight without any driver control. So on remote controlled vehicles.</p>
-   <p>The team used ultrasonic sensors to detect objects in front of the robot dubbed Spacey. Inside, with a controlled environment, no wind, room temperature, and a flat ground, Spacey worked beautifully. It could conquer any obstacle in front of it. However, that quickly changed when 'outside' was added to the equation.</p>
-   <p>The night before, half the team remained at school until 9pm working out bugs. Spoiler alert, they never did get fixed. The competition day was full of fog, freezing fingers, and the addition of two antlers. In conclusion, the team did not get far in the competition. </p>
-   <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-   <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-   <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-   <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
- </div>
- 
- <script>
- var navbar = document.getElementById("navbar");
- var sticky = navbar.offsetTop;
- function myFunction() {
-   if (window.pageYOffset >= sticky) {
-     navbar.classList.add("sticky")
-   } else {
-     navbar.classList.remove("sticky");
-   }
- }
- </script>
- 
- </body>
- </html>
+  }
+  </script>
+  
+  </body>
+  </html>
